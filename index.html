@@ -1,0 +1,16 @@
+<html>
+<head>
+    <title>Async Example</title>
+</head>
+<body>
+    <button onclick="handleAsync()">Click</button>
+    <p id="result"></p>
+
+    <script>
+        async function handleAsync() {
+            let data = await Promise.resolve("Data fetched!");
+            document.getElementById("result").innerHTML = data;
+        }
+    </script>
+</body>
+</html>
